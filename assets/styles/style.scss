@@ -1,0 +1,591 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+}
+
+// Font Google
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+// Declare Color
+$orange: #FF9900;
+$orange-hover: #FFBD5A;
+$black-bold: #2F281E;
+$black-reg: #544837;
+$white: #FFFFFF;
+
+
+// Navbar
+.navbar {
+    height: 80px;
+
+    .navbar-nav {
+        .nav-link {
+            font-weight: 400;
+            font-size: 14px;
+            color: $black-bold;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        .btn-sign-in {
+            width: 110px;
+            height: 46px;
+            border: 1px solid #BCD0E5;
+            font-weight: 600;
+            font-size: 16px;
+            color: #173A56;
+            padding: 10px 12px 0px;
+
+            &:hover {
+                background-color: #d9dfe6;
+            }
+        }
+
+        .btn-sign-up {
+            width: 110px;
+            height: 46px;
+            background-color: $orange;
+            font-weight: 600;
+            font-size: 16px;
+            color: $white;
+            padding: 10px 12px 0px;
+
+            &:hover {
+                background-color: $orange-hover;
+            }
+        }
+    }
+}
+
+// Hero
+.hero {
+    margin-top: 30px;
+
+    .hero-text {
+        padding-top: 90px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 44px;
+            color: $black-bold;
+            max-width: 518px;
+            line-height: 54px;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: $black-reg;
+            max-width: 458px;
+            line-height: 28px;
+        }
+
+        .btn-get-started {
+            width: 175px;
+            height: 53px;
+            background-color: $orange;
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 15px 12px 0;
+
+            &:hover {
+                background-color: $orange-hover;
+            }
+        }
+
+        .watch-video {
+            color: $orange;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+}
+
+// Features
+.features {
+    margin-top: 100px;
+    position: relative;
+
+    .bg-features {
+        position: absolute;
+        left: 0;
+        top: 150px;
+        z-index: -10;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        max-width: 539px;
+        color: $black-bold;
+        line-height: 55px;
+        margin: 0px auto;
+    }
+
+    .row {
+        margin-top: 56px;
+        justify-content: center;
+
+        .card-features {
+            h3 {
+                font-weight: 600;
+                font-size: 22px;
+                color: $black-bold;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                color: $black-reg;
+                text-align: left;
+                max-width: 240px;
+                width: 240px;
+                line-height: 26px;
+            }
+        }
+
+        .btn-sign-up-features {
+            width: 175px;
+            height: 53px;
+            background-color: $orange;
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 16px 12px 0px;
+            margin-top: 30px;
+
+            &:hover {
+                background-color: $orange-hover;
+            }
+        }
+    }
+}
+
+// Effortless Validation
+.effortless {
+    margin-top: 150px;
+
+    .row {
+        h4 {
+            font-weight: 500;
+            font-size: 16px;
+            color: $black-reg;
+            line-height: 25px;
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            max-width: 384px;
+            font-weight: 700;
+            font-size: 36px;
+            color: $black-bold;
+            line-height: 55px;
+            margin-bottom: 30px;
+        }
+
+        .effort-paragraph {
+            max-width: 486px;
+            font-weight: 500;
+            font-size: 16px;
+            color: $black-reg;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            max-width: 486px;
+            font-weight: 500;
+            font-size: 16px;
+            color: $black-reg;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            max-width: 220px;
+            font-weight: 700;
+            font-size: 16px;
+            color: $black-bold;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// Product Managers
+.product {
+    margin-top: 100px;
+
+    .row {
+        .col-md-5 {
+            display: flex;
+            align-items: center;
+
+            .product-text {
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black-reg;
+                    margin-bottom: 4px;
+                }
+
+                h2 {
+                    max-width: 350px;
+                    font-weight: 700;
+                    font-size: 36px;
+                    color: $black-bold;
+                    line-height: 55px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    max-width: 486px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black-reg;
+                    line-height: 26px;
+                    margin-bottom: 30px;
+                }
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    img {
+                        margin-right: 30px;
+                    }
+
+                    p {
+                        max-width: 385px;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Marketers 
+.marketers {
+    margin-top: 100px;
+
+    .container {
+        .row {
+            h4 {
+                font-weight: 500;
+                font-size: 16px;
+                color: $black-reg;
+                line-height: 25px;
+                margin-bottom: 4px;
+            }
+
+            h2 {
+                max-width: 384px;
+                font-weight: 700;
+                font-size: 36px;
+                color: $black-bold;
+                line-height: 55px;
+                margin-bottom: 30px;
+            }
+
+            .marketers-paragraph {
+                max-width: 486px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $black-reg;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                max-width: 486px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $black-reg;
+                line-height: 26px;
+                margin-bottom: 25px;
+            }
+
+            h3 {
+                max-width: 220px;
+                font-weight: 700;
+                font-size: 16px;
+                color: $black-bold;
+                line-height: 26px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+// Superhero
+.superhero {
+    position: relative;
+    margin-top: 150px;
+    height: 835px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+
+    .container {
+
+        .avatar-1 {
+            display: flex;
+            justify-content: flex-start;
+
+            img {
+                margin-top: 160px;
+            }
+        }
+
+        .avatar-2 {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                margin-top: 100px;
+            }
+        }
+
+        h2 {
+            max-width: 354px;
+            font-weight: 700;
+            font-size: 36px;
+            color: $black-bold;
+            line-height: 54px;
+            margin: 230px auto 22px;
+        }
+
+        p {
+            max-width: 542px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: #567592;
+            margin: 0px auto 45px;
+        }
+
+        .btn-contact {
+            width: 216px;
+            height: 53px;
+            background-color: $orange;
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 15px 12px 0px;
+
+            &:hover {
+                background-color: $orange-hover;
+            }
+        }
+
+        .avatar-3 {
+            img {
+                margin-top: 40px;
+            }
+        }
+
+        .avatar-4 {
+            img {
+                margin-top: 100px;
+            }
+        }
+
+        .avatar-5 {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// Marketing Strategies
+.marketing {
+    margin-top: 30px;
+    min-height: 500px;
+
+    h2 {
+        max-width: 368px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+        color: $black-bold;
+    }
+
+    p {
+        max-width: 622px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $black-reg;
+    }
+
+    .card-slider {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+
+        .marketing-card {
+            width: 348px;
+            min-height: 359px;
+            margin-right: 30px;
+            border: none;
+
+            h4 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: $black-reg;
+                margin: 25px 0px 12px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            h3 {
+                max-width: 294px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                color: $black-bold;
+            }
+
+            .active {
+                color: $orange;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    margin: 100px 0px;
+
+    .container {
+
+        hr {
+            background-color: #BCD0E5;
+            width: 100%;
+            height: 1px;
+            opacity: 50%;
+            margin-bottom: 100px;
+        }
+
+        .row {
+            h3 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $black-reg;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                list-style: none;
+                padding-inline-start: 0px;
+
+                li {
+                    a {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 35px;
+                        color: $black-reg;
+                    }
+                }
+            }
+
+            p {
+                max-width: 280px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $black-reg;
+            }
+
+            input {
+                width: 80%;
+                height: 48px;
+                display: block;
+                border: 1px solid #BCD0E5;
+                border-radius: 4px;
+                padding: 14px 17px;
+                color: $black-reg;
+                margin-top: 30px;
+
+                &::placeholder {
+                    color: #BCD0E5;
+                }
+            }
+
+            .btn-sign-up-footer {
+                width: 50%;
+                height: 50px;
+                padding: 14px 12px;
+                background-color: $orange;
+                color: $white;
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: 20px;
+
+                &:hover {
+                    background-color: $orange-hover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero {
+
+        .hero-text {
+            padding-top: 60px;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .hero {
+        .btn-get-started {
+            margin: 0px 0px 20px;
+        }
+
+        .watch-video {
+            display: block;
+
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+}
